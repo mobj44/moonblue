@@ -184,12 +184,12 @@ local theme = lush(function(injected_functions)
     Structure      { fg = teal }, --   struct, union, enum, etc.
     Typedef        { fg = teal }, --   A typedef
 
-    -- Special        { }, -- (*) Any special symbol
-    -- SpecialChar    { }, --   Special character in a constant
-    -- Tag            { }, --   You can use CTRL-] on this
-    -- Delimiter      { }, --   Character that needs attention
-    -- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
-    -- Debug          { }, --   Debugging statements
+    Special        { }, -- (*) Any special symbol
+    SpecialChar    { }, --   Special character in a constant
+    Tag            { }, --   You can use CTRL-] on this
+    Delimiter      { }, --   Character that needs attention
+    SpecialComment { }, --   Special things inside a comment (e.g. '\n')
+    Debug          { }, --   Debugging statements
 
     -- Underlined     { gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
@@ -261,17 +261,17 @@ local theme = lush(function(injected_functions)
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    sym"@punctuation"       { fg = pink }, -- Delimiter
+    sym"@punctuation"       { fg = purple }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
     sym"@constant.builtin"  { fg = blue }, -- Special
     -- sym"@constant.macro"    { }, -- Define
-    -- sym"@define"            { }, -- Define
+    sym"@define"            { fg = purple }, -- Define
     -- sym"@macro"             { }, -- Macro
     -- sym"@string"            { }, -- String
     sym"@string.escape"     { fg = blue }, -- SpecialChar
-    -- sym"@string.special"    { }, -- SpecialChar
+    sym"@string.special"    { fg = blue }, -- SpecialChar
     -- sym"@character"         { }, -- Character
-    -- sym"@character.special" { }, -- SpecialChar
+    sym"@character.special" { fg = blue }, -- SpecialChar
     -- sym"@number"            { }, -- Number
     -- sym"@boolean"           { }, -- Boolean
     -- sym"@float"             { }, -- Float
@@ -282,7 +282,7 @@ local theme = lush(function(injected_functions)
     sym"@method"            { fg = pink }, -- Function
     sym"@field"             { fg = teal }, -- Identifier
     sym"@property"          { fg = teal }, -- Identifier
-    -- sym"@constructor"       { }, -- Special
+    sym"@constructor"       { fg = blue }, -- Special
     -- sym"@conditional"       { }, -- Conditional
     -- sym"@repeat"            { }, -- Repeat
     -- sym"@label"             { }, -- Label
@@ -293,12 +293,12 @@ local theme = lush(function(injected_functions)
     -- sym"@type"              { }, -- Type
     sym"@type.definition"   { fg = pink }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
-    sym"@structure"         { fg = teal } -- Structure
+    sym"@structure"         { fg = teal }, -- Structure
     -- sym"@namespace"         { }, -- Identifier
     -- sym"@include"           { }, -- Include
     -- sym"@preproc"           { }, -- PreProc
-    -- sym"@debug"             { }, -- Debug
-    -- sym"@tag"               { }, -- Tag
+    sym"@debug"             { fg = blue }, -- Debug
+    sym"@tag"               { fg = blue }, -- Tag
 }
 end)
 

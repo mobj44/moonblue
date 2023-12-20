@@ -49,11 +49,19 @@ local hsl = lush.hsl
 -- support an annotation like the following. Consult your server documentation.
 ---@diagnostic disable: undefined-global
 
-print("Loading moonblue")
+local dark = hsl(217, 33, 17)
+local blue = hsl(213, 94, 68)
+local pink = hsl(329, 86, 70)
+local purple = hsl(256, 92, 76)
+local green = hsl(158, 64, 52)
+local teal = hsl(187, 92, 69)
+local pink2 = hsl(301, 55, 64)
+local red = hsl(347, 59, 50)
+local gray = hsl(215, 20, 45)
 
 local theme = lush(function(injected_functions)
-  local sym = injected_functions.sym
-  return {
+    local sym = injected_functions.sym
+    return {
     -- The following are the Neovim (as of 0.8.0-dev+100-g371dfb174) highlight
     -- groups, mostly used for styling UI elements.
     -- Comment them out and add your own properties to override the defaults.
@@ -63,7 +71,7 @@ local theme = lush(function(injected_functions)
     -- to reorder items as you go.
     --
     -- See :h highlight-groups
-    Normal { bg = hsl(217, 33, 17), fg = hsl(213, 94, 68) },
+    Normal { bg = dark, fg = blue },
     -- ColorColumn    { fg = hsl(0, 90, 42)}, -- Columns set with 'colorcolumn'
     -- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     -- Cursor         { bg = hsl(),fg = hsl(0, 90, 42)}, -- Character under the cursor
@@ -97,14 +105,14 @@ local theme = lush(function(injected_functions)
     -- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
-    -- MoreMsg        { }, -- |more-prompt|
+    MoreMsg        { fg = green }, -- |more-prompt|
     NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     -- Normal         { }, -- Normal text
-    -- NormalFloat    { }, -- Normal text in floating windows.
+    NormalFloat    { fg = gray.li(50) }, -- Normal text in floating windows.
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
-    -- Pmenu          { }, -- Popup menu: Normal item.
+    Pmenu          { bg = dark.li(25) }, -- Popup menu: Normal item.
     -- PmenuSel       { }, -- Popup menu: Selected item.
     -- PmenuKind      { }, -- Popup menu: Normal item "kind"
     -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
@@ -128,8 +136,8 @@ local theme = lush(function(injected_functions)
     -- Title          { }, -- Titles for output from ":set all", ":autocmd" etc.
     -- Visual         { }, -- Visual mode selection
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
-    -- WarningMsg     { }, -- Warning messages
-    Whitespace     { fg = hsl(215, 20, 45)}, -- "nbsp", "space", "tab" and "trail" in 'listchars'
+    WarningMsg     { fg = red }, -- Warning messages
+    Whitespace     { fg = hsl(215, 20, 45) }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     -- Winseparator   { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     -- WildMenu       { }, -- Current match in 'wildmenu' completion
     -- WinBar         { }, -- Window bar of current window
@@ -143,26 +151,26 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment        {fg = hsl(215, 20, 45) }, -- Any comment
-    LineNr         {Comment, gui = "italic"},
+    Comment        { fg = gray }, -- Any comment
+    LineNr         { Comment, gui = "italic" },
 
-    Constant       { }, -- (*) Any constant
-    String         { fg = hsl(158, 64, 52) }, --   A string constant: "this is a string"
-    Character      { fg = Normal.fg }, --   A character constant: 'c', '\n'
-    Number         { fg = Normal.fg }, --   A number constant: 234, 0xff
-    Boolean        { fg = Normal.fg }, --   A boolean constant: TRUE, false
-    Float          { fg = Normal.fg}, --   A floating point constant: 2.3e10
+    Constant       { fg = blue }, -- (*) Any constant
+    String         { fg = green }, --   A string constant: "this is a string"
+    Character      { fg = blue }, --   A character constant: 'c', '\n'
+    Number         { fg = blue }, --   A number constant: 234, 0xff
+    Boolean        { fg = blue }, --   A boolean constant: TRUE, false
+    Float          { fg = blue }, --   A floating point constant: 2.3e10
 
-    Identifier     { fg = hsl(329, 86, 70) }, -- (*) Any variable name
-    Function       { fg = hsl(329, 86, 70) }, --   Function name (also: methods for classes)
+    Identifier     { fg = pink }, -- (*) Any variable name
+    Function       { fg = teal }, --   Function name (also: methods for classes)
 
-    Statement      { fg = hsl(256, 92, 76) }, -- (*) Any statement
-    Conditional    { fg = hsl(256, 92, 76)}, --   if, then, else, endif, switch, etc.
-    Repeat         {Conditional}, --   for, do, while, etc.
-    Label          {Conditional}, --   case, default, etc.
-    Operator       {Conditional}, --   "sizeof", "+", "*", etc.
-    Keyword        { fg = hsl(256, 92, 76) }, --   any other keyword
-    Exception      { fg = hsl(187, 92, 69)}, --   try, catch, throw
+    Statement      { fg = purple }, -- (*) Any statement
+    Conditional    { fg = purple }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg = purple }, --   for, do, while, etc.
+    Label          { fg = purple }, --   case, default, etc.
+    Operator       { fg = purple }, --   "sizeof", "+", "*", etc.
+    Keyword        { fg = purple }, --   any other keyword
+    Exception      { fg = purple }, --   try, catch, throw
 
     -- PreProc        { }, -- (*) Generic Preprocessor
     -- Include        { }, --   Preprocessor #include
@@ -170,10 +178,10 @@ local theme = lush(function(injected_functions)
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { Function }, -- (*) int, long, char, etc.
-    StorageClass   { Keyword }, --   static, register, volatile, etc.
-    Structure      { Keyword }, --   struct, union, enum, etc.
-    Typedef        { Keyword }, --   A typedef
+    Type           { fg = blue }, -- (*) int, long, char, etc.
+    StorageClass   { fg = purple }, --   static, register, volatile, etc.
+    Structure      { fg = teal }, --   struct, union, enum, etc.
+    Typedef        { fg = teal }, --   A typedef
 
     -- Special        { }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
@@ -185,7 +193,7 @@ local theme = lush(function(injected_functions)
     -- Underlined     { gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
     -- Error          { }, -- Any erroneous construct
-    Todo           { fg = hsl(301, 82, 64)}, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo           { fg = pink2 }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- These groups are for the native LSP client and diagnostic system. Some
     -- other LSP clients may use these groups, or use their own. Consult your
@@ -246,15 +254,15 @@ local theme = lush(function(injected_functions)
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     -- sym"@text.literal"      { }, -- Comment
-    -- sym"@text.reference"    { }, -- Identifier
+    sym"@text.reference"    { fg = hsl(0, 0, 100) }, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    sym"@punctuation"       { Keyword }, -- Delimiter
+    -- sym"@punctuation"       { Keyword }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
-    sym"@constant.builtin"  { Function }, -- Special
+    -- sym"@constant.builtin"  { Function }, -- Special
     -- sym"@constant.macro"    { }, -- Define
     -- sym"@define"            { }, -- Define
     -- sym"@macro"             { }, -- Macro
@@ -267,7 +275,7 @@ local theme = lush(function(injected_functions)
     -- sym"@boolean"           { }, -- Boolean
     -- sym"@float"             { }, -- Float
     -- sym"@function"          { }, -- Function
-    sym"@function.builtin"  { Function }, -- Special
+    -- sym"@function.builtin"  { Function }, -- Special
     -- sym"@function.macro"    { }, -- Macro
     -- sym"@parameter"         { }, -- Identifier
     -- sym"@method"            { }, -- Function
@@ -284,7 +292,7 @@ local theme = lush(function(injected_functions)
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
-    -- sym"@structure"         { }, -- Structure
+    -- sym"@structure"         { hsl(187, 92, 69) } -- Structure
     -- sym"@namespace"         { }, -- Identifier
     -- sym"@include"           { }, -- Include
     -- sym"@preproc"           { }, -- PreProc
@@ -294,7 +302,6 @@ local theme = lush(function(injected_functions)
 end)
 
 -- Return our parsed theme for extension or use elsewhere
-print('Now returning theme')
 return theme
 
 -- vi:nowrap

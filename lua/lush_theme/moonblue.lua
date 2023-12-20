@@ -153,7 +153,7 @@ local theme = lush(function(injected_functions)
     Boolean        { fg = Normal.fg }, --   A boolean constant: TRUE, false
     Float          { fg = Normal.fg}, --   A floating point constant: 2.3e10
 
-    Identifier     { fg = hsl(329,86, 95) }, -- (*) Any variable name
+    Identifier     { fg = hsl(329, 86, 70) }, -- (*) Any variable name
     Function       { fg = hsl(329, 86, 70) }, --   Function name (also: methods for classes)
 
     Statement      { fg = hsl(256, 92, 76) }, -- (*) Any statement
@@ -170,7 +170,7 @@ local theme = lush(function(injected_functions)
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    -- Type           { }, -- (*) int, long, char, etc.
+    Type           { Function }, -- (*) int, long, char, etc.
     StorageClass   { Keyword }, --   static, register, volatile, etc.
     Structure      { Keyword }, --   struct, union, enum, etc.
     Typedef        { Keyword }, --   A typedef
@@ -252,9 +252,9 @@ local theme = lush(function(injected_functions)
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    -- sym"@punctuation"       { }, -- Delimiter
+    sym"@punctuation"       { Keyword }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
-    -- sym"@constant.builtin"  { }, -- Special
+    sym"@constant.builtin"  { Function }, -- Special
     -- sym"@constant.macro"    { }, -- Define
     -- sym"@define"            { }, -- Define
     -- sym"@macro"             { }, -- Macro
@@ -267,7 +267,7 @@ local theme = lush(function(injected_functions)
     -- sym"@boolean"           { }, -- Boolean
     -- sym"@float"             { }, -- Float
     -- sym"@function"          { }, -- Function
-    -- sym"@function.builtin"  { }, -- Special
+    sym"@function.builtin"  { Function }, -- Special
     -- sym"@function.macro"    { }, -- Macro
     -- sym"@parameter"         { }, -- Identifier
     -- sym"@method"            { }, -- Function

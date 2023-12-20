@@ -108,7 +108,7 @@ local theme = lush(function(injected_functions)
     MoreMsg        { fg = green }, -- |more-prompt|
     NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     -- Normal         { }, -- Normal text
-    NormalFloat    { fg = gray.li(50) }, -- Normal text in floating windows.
+    NormalFloat    { fg = gray.li(50), bg = dark.li(25) }, -- Normal text in floating windows.
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
@@ -260,14 +260,14 @@ local theme = lush(function(injected_functions)
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    -- sym"@punctuation"       { Keyword }, -- Delimiter
+    sym"@punctuation"       { fg = purple }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
-    -- sym"@constant.builtin"  { Function }, -- Special
+    sym"@constant.builtin"  { fg = blue }, -- Special
     -- sym"@constant.macro"    { }, -- Define
     -- sym"@define"            { }, -- Define
     -- sym"@macro"             { }, -- Macro
     -- sym"@string"            { }, -- String
-    -- sym"@string.escape"     { }, -- SpecialChar
+    sym"@string.escape"     { fg = blue }, -- SpecialChar
     -- sym"@string.special"    { }, -- SpecialChar
     -- sym"@character"         { }, -- Character
     -- sym"@character.special" { }, -- SpecialChar
@@ -275,10 +275,10 @@ local theme = lush(function(injected_functions)
     -- sym"@boolean"           { }, -- Boolean
     -- sym"@float"             { }, -- Float
     -- sym"@function"          { }, -- Function
-    -- sym"@function.builtin"  { Function }, -- Special
+    sym"@function.builtin"  { fg = pink }, -- Special
     -- sym"@function.macro"    { }, -- Macro
-    -- sym"@parameter"         { }, -- Identifier
-    -- sym"@method"            { }, -- Function
+    sym"@parameter"         { fg = hsl(0, 0, 100) }, -- Identifier
+    sym"@method"            { fg = pink }, -- Function
     -- sym"@field"             { }, -- Identifier
     -- sym"@property"          { }, -- Identifier
     -- sym"@constructor"       { }, -- Special
@@ -288,7 +288,7 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    -- sym"@variable"          { }, -- Identifier
+    sym"@variable"          { fg = hsl(0, 0, 100) }, -- Identifier
     -- sym"@type"              { }, -- Type
     -- sym"@type.definition"   { }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass

@@ -58,6 +58,7 @@ local teal = hsl(187, 92, 69)
 local pink2 = hsl(301, 55, 64)
 local red = hsl(347, 59, 50)
 local gray = hsl(215, 20, 45)
+local white = hsl(0, 0, 100)
 
 local theme = lush(function(injected_functions)
     local sym = injected_functions.sym
@@ -254,13 +255,13 @@ local theme = lush(function(injected_functions)
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     -- sym"@text.literal"      { }, -- Comment
-    sym"@text.reference"    { fg = hsl(0, 0, 100) }, -- Identifier
+    sym"@text.reference"    { fg = white }, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    sym"@punctuation"       { fg = purple }, -- Delimiter
+    sym"@punctuation"       { fg = white }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
     sym"@constant.builtin"  { fg = blue }, -- Special
     -- sym"@constant.macro"    { }, -- Define
@@ -277,10 +278,10 @@ local theme = lush(function(injected_functions)
     -- sym"@function"          { }, -- Function
     sym"@function.builtin"  { fg = pink }, -- Special
     -- sym"@function.macro"    { }, -- Macro
-    sym"@parameter"         { fg = hsl(0, 0, 100) }, -- Identifier
+    sym"@parameter"         { fg = white }, -- Identifier
     sym"@method"            { fg = pink }, -- Function
-    -- sym"@field"             { }, -- Identifier
-    -- sym"@property"          { }, -- Identifier
+    sym"@field"             { fg = white }, -- Identifier
+    sym"@property"          { fg = white }, -- Identifier
     -- sym"@constructor"       { }, -- Special
     -- sym"@conditional"       { }, -- Conditional
     -- sym"@repeat"            { }, -- Repeat
@@ -288,11 +289,11 @@ local theme = lush(function(injected_functions)
     -- sym"@operator"          { }, -- Operator
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
-    sym"@variable"          { fg = hsl(0, 0, 100) }, -- Identifier
+    sym"@variable"          { fg = white }, -- Identifier
     -- sym"@type"              { }, -- Type
-    -- sym"@type.definition"   { }, -- Typedef
+    sym"@type.definition"   { fg = pink }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
-    -- sym"@structure"         { hsl(187, 92, 69) } -- Structure
+    sym"@structure"         { fg = teal } -- Structure
     -- sym"@namespace"         { }, -- Identifier
     -- sym"@include"           { }, -- Include
     -- sym"@preproc"           { }, -- PreProc

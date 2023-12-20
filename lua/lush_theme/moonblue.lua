@@ -255,13 +255,13 @@ local theme = lush(function(injected_functions)
     -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     -- sym"@text.literal"      { }, -- Comment
-    sym"@text.reference"    { fg = white }, -- Identifier
+    sym"@text.reference"    { fg = red }, -- Identifier
     -- sym"@text.title"        { }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    sym"@punctuation"       { fg = white }, -- Delimiter
+    sym"@punctuation"       { fg = pink }, -- Delimiter
     -- sym"@constant"          { }, -- Constant
     sym"@constant.builtin"  { fg = blue }, -- Special
     -- sym"@constant.macro"    { }, -- Define
@@ -275,13 +275,13 @@ local theme = lush(function(injected_functions)
     -- sym"@number"            { }, -- Number
     -- sym"@boolean"           { }, -- Boolean
     -- sym"@float"             { }, -- Float
-    -- sym"@function"          { }, -- Function
+    sym"@function"          { fg = pink }, -- Function
     sym"@function.builtin"  { fg = pink }, -- Special
     -- sym"@function.macro"    { }, -- Macro
     sym"@parameter"         { fg = white }, -- Identifier
     sym"@method"            { fg = pink }, -- Function
-    sym"@field"             { fg = white }, -- Identifier
-    sym"@property"          { fg = white }, -- Identifier
+    sym"@field"             { fg = teal }, -- Identifier
+    sym"@property"          { fg = teal }, -- Identifier
     -- sym"@constructor"       { }, -- Special
     -- sym"@conditional"       { }, -- Conditional
     -- sym"@repeat"            { }, -- Repeat
@@ -290,7 +290,7 @@ local theme = lush(function(injected_functions)
     -- sym"@keyword"           { }, -- Keyword
     -- sym"@exception"         { }, -- Exception
     sym"@variable"          { fg = white }, -- Identifier
-    -- sym"@type"              { }, -- Type
+    sym"@type"              { fg = red }, -- Type
     sym"@type.definition"   { fg = pink }, -- Typedef
     -- sym"@storageclass"      { }, -- StorageClass
     sym"@structure"         { fg = teal } -- Structure

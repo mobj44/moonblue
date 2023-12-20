@@ -36,7 +36,7 @@
 
 -- Enable lush.ify on this file, run:
 --
---  `:Lushify`
+-- `:Lushify`
 --
 --  or
 --

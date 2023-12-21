@@ -1,6 +1,6 @@
 -- Lualine theme
+-- copy into lualine config file
 
-local dark = "#1e293b"
 local blue = "#60a5fa"
 local pink = "#f471b5"
 local green = "#34d399"

@@ -32,6 +32,9 @@ See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details.
 ## Screenshots  
 ### LSP Dialog box  
 ![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
+### Zellij
+![Screenshot 2023-12-20 at 9 33 26 PM](https://github.com/mobj44/moonblue/assets/95835461/f4856f57-4471-4f4b-9987-98e4727fae46)
+
 
 ## Supports 
 - treesitter.nvim  

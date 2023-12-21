@@ -16,7 +16,7 @@ Using `lazy.nvim`
 lua config:
 ```lua
 {
-  "mobj44/moonblue.nvim",
+  "mobj44/moonblue",
   dependencies = { "rktjmp/lush.nvim" },
   name = "moonblue",
   branch = "main",

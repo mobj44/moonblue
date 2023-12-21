@@ -34,8 +34,8 @@ See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details.
 ![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
 
 ## Supports 
-Treesitter 
-Lualine 
+- treesitter.nvim  
+- lualine.nvim
 
 # Extras
 ## Lualine
@@ -48,3 +48,6 @@ Copy and paste theme into lualine config.
 
 ## itermcolor
 ![Screenshot 2023-12-20 at 8 38 37 PM](https://github.com/mobj44/moonblue/assets/95835461/cb9614e0-fae2-45f3-92b8-d0b591de491f)
+
+# License
+This project is licensed under the [MIT License](LICENSE).

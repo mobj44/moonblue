@@ -1,0 +1,15 @@
+themes {
+    moonblue {
+        fg "#60a5fa"
+        bg "#1d293a"
+        red "1d293a"
+        green "#34d399"
+        yellow "#dacd3e"
+        blue "#60a5fa"
+        magenta "#f471b5"
+        orange "#a88bfa"
+        cyan "#f471b5"
+        black "#1d293a"
+        white "#ffffff"
+    }
+}

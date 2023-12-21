@@ -82,7 +82,7 @@ local theme = lush(function(injected_functions)
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     CursorColumn   { bg = dark }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine     { bg = dark }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-    -- Directory      { }, -- Directory names (and other special names in listings)
+    Directory      { fg = green, gui = "bold" }, -- Directory names (and other special names in listings)
     -- DiffAdd        { }, -- Diff mode: Added line |diff.txt|
     -- DiffChange     { }, -- Diff mode: Changed line |diff.txt|
     -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
@@ -110,7 +110,7 @@ local theme = lush(function(injected_functions)
     MoreMsg        { fg = green }, -- |more-prompt|
     NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     -- Normal         { }, -- Normal text
-    NormalFloat    { fg = gray.li(50), bg = dark.li(25) }, -- Normal text in floating windows.
+    NormalFloat    { fg = dark, bg = dark.li(25) }, -- Normal text in floating windows.
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows

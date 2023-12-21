@@ -22,6 +22,7 @@ lua config:
   branch = "main",
   priority = 1000,
   config = function()
+    vim.cmd("set termguicolors")
     vim.cmd("colorscheme moonblue")
   end
 }
@@ -32,7 +33,7 @@ vim.cmd("colorscheme moonblue")
 ```
 
 ## Customization
-This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), run `:Lushify` to edit. And see [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
+This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), and does require lush to use. Run `:Lushify` to edit. And see [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
 
 ## Supports 
 Treesitter 

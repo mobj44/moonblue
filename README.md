@@ -1,10 +1,9 @@
 <div align="center">
   
-# Moonblue theme for neovim  
-A neovim tailwind moonblue theme ported from vscode
+# Moonblue Theme for Neovim  
+A Neovim Tailwind Moonblue theme ported from VSCode
 
 ![Screenshot 2023-12-20 at 8 20 35 PM](https://github.com/mobj44/moonblue/assets/95835461/15ed463b-b945-4f0b-94d4-7ecdfd959f14)
-![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
 
 </div>
 
@@ -34,6 +33,9 @@ vim.cmd("colorscheme moonblue")
 
 ## Customization
 This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), and does require lush to use. Run `:Lushify` to edit. And see [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
+
+## Screenshots  
+![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
 
 ## Supports 
 Treesitter 

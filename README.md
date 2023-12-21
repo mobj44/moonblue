@@ -7,12 +7,11 @@ A Neovim Tailwind Moonblue theme ported from VSCode
 
 </div>
 
-I love the tailwind moonblue theme in VSCode, this is my best attempt at recreating it for Neo vim. 
+I love the Tailwind Moonblue theme in VSCode, this is my best attempt at recreating it for Neovim. 
 
 # Installation
 
 Using `lazy.nvim`  
-lua config:
 ```lua
 {
   "mobj44/moonblue",
@@ -25,24 +24,21 @@ lua config:
     vim.cmd("colorscheme moonblue")
   end
 }
-```
-in nvim init config:
-```lua
-vim.cmd("colorscheme moonblue")
-```
-
+```  
 ## Customization
-This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), and does require lush to use. Run `:Lushify` to edit. And see [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
+This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), and does require lush to use. Run `:Lushify` to edit.  
+See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
 
 ## Screenshots  
+### LSP Dialog box  
 ![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
 
 ## Supports 
 Treesitter 
+Lualine 
 
 # Extras
 ## Lualine
-### Usage
 Copy and paste theme into lualine config.
 
 ![Screenshot 2023-12-20 at 8 32 07 PM](https://github.com/mobj44/moonblue/assets/95835461/550d3d6a-c7d8-415b-ad90-e35c96946a1f)

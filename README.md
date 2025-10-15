@@ -31,17 +31,18 @@ This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim
 See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
 
 ## Color Theme
-| Color Name       | Preview                                                                 | Hex Code   |
-|------------------|-------------------------------------------------------------------------|------------|
-| Hot pink         | <div style="width:40px;height:20px;background:#F471B5;border:1px solid #ccc;"></div> | `#F471B5` |
-| Prussian blue    | <div style="width:40px;height:20px;background:#1E293B;border:1px solid #ccc;"></div> | `#1E293B` |
-| Tropical indigo  | <div style="width:40px;height:20px;background:#A88BFA;border:1px solid #ccc;"></div> | `#A88BFA` |
-| Electric blue    | <div style="width:40px;height:20px;background:#67E8F9;border:1px solid #ccc;"></div> | `#67E8F9` |
-| Ruddy blue       | <div style="width:40px;height:20px;background:#60A5FA;border:1px solid #ccc;"></div> | `#60A5FA` |
-| French mauve     | <div style="width:40px;height:20px;background:#D670D4;border:1px solid #ccc;"></div> | `#D670D4` |
-| Emerald          | <div style="width:40px;height:20px;background:#34D399;border:1px solid #ccc;"></div> | `#34D399` |
-| Charcoal         | <div style="width:40px;height:20px;background:#334155;border:1px solid #ccc;"></div> | `#334155` |
-| Cool gray        | <div style="width:40px;height:20px;background:#7B8EA7;border:1px solid #ccc;"></div> | `#7B8EA7` |
+
+| Color Name       | Preview                                                                                   | Hex Code   |
+|------------------|-------------------------------------------------------------------------------------------|------------|
+| Hot pink         | ![#F471B5](https://singlecolorimage.com/get/F471B5/40x20)                                 | `#F471B5` |
+| Prussian blue    | ![#1E293B](https://singlecolorimage.com/get/1E293B/40x20)                                 | `#1E293B` |
+| Tropical indigo  | ![#A88BFA](https://singlecolorimage.com/get/A88BFA/40x20)                                 | `#A88BFA` |
+| Electric blue    | ![#67E8F9](https://singlecolorimage.com/get/67E8F9/40x20)                                 | `#67E8F9` |
+| Ruddy blue       | ![#60A5FA](https://singlecolorimage.com/get/60A5FA/40x20)                                 | `#60A5FA` |
+| French mauve     | ![#D670D4](https://singlecolorimage.com/get/D670D4/40x20)                                 | `#D670D4` |
+| Emerald          | ![#34D399](https://singlecolorimage.com/get/34D399/40x20)                                 | `#34D399` |
+| Charcoal         | ![#334155](https://singlecolorimage.com/get/334155/40x20)                                 | `#334155` |
+| Cool gray        | ![#7B8EA7](https://singlecolorimage.com/get/7B8EA7/40x20)                                 | `#7B8EA7` |
 
 
 

@@ -7,7 +7,8 @@ A Neovim Tailwind Moonblue theme ported from VSCode
 
 </div>
 
-I love the Tailwind Moonblue theme in VSCode, this is my best attempt at recreating it for Neovim. 
+I love the Tailwind Moonblue theme in VSCode, this is my best attempt at recreating it for Neovim.
+I also have included other additional themes in `/extra` 
 
 # Installation
 
@@ -29,6 +30,21 @@ Using `lazy.nvim`
 This theme was made using [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim), and does require lush to use. Run `:Lushify` to edit.  
 See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details. 
 
+## Color Theme
+| Color Name       | Preview                                                                 | Hex Code   |
+|------------------|-------------------------------------------------------------------------|------------|
+| Hot pink         | <div style="width:40px;height:20px;background:#F471B5;border:1px solid #ccc;"></div> | `#F471B5` |
+| Prussian blue    | <div style="width:40px;height:20px;background:#1E293B;border:1px solid #ccc;"></div> | `#1E293B` |
+| Tropical indigo  | <div style="width:40px;height:20px;background:#A88BFA;border:1px solid #ccc;"></div> | `#A88BFA` |
+| Electric blue    | <div style="width:40px;height:20px;background:#67E8F9;border:1px solid #ccc;"></div> | `#67E8F9` |
+| Ruddy blue       | <div style="width:40px;height:20px;background:#60A5FA;border:1px solid #ccc;"></div> | `#60A5FA` |
+| French mauve     | <div style="width:40px;height:20px;background:#D670D4;border:1px solid #ccc;"></div> | `#D670D4` |
+| Emerald          | <div style="width:40px;height:20px;background:#34D399;border:1px solid #ccc;"></div> | `#34D399` |
+| Charcoal         | <div style="width:40px;height:20px;background:#334155;border:1px solid #ccc;"></div> | `#334155` |
+| Cool gray        | <div style="width:40px;height:20px;background:#7B8EA7;border:1px solid #ccc;"></div> | `#7B8EA7` |
+
+
+
 ## Screenshots  
 ### LSP Dialog box  
 ![Screenshot 2023-12-20 at 8 33 16 PM](https://github.com/mobj44/moonblue/assets/95835461/c4a18e91-cbf8-4c67-9c9f-0d0f2cdb992e)
@@ -39,6 +55,7 @@ See [rktjmp/lush.nvim](https://github.com/rktjmp/lush.nvim) for more details.
 ## Supports 
 - treesitter.nvim  
 - lualine.nvim
+- iterm
 
 # Extras
 ## Lualine
